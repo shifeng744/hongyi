@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>	
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+		<link href="https://cdn.bootcss.com/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/index.css" />
+		
+	</head>
+	<body>
+		<div id="hy-body">
+			<div class="hy-pc hidden-xs">
+				<!--头部-->
+				<header class="pc-header">
+					<div class="pc-navbar container">
+						<div class="nav-logo">
+							<a href=""><img src="img/logo-white2.png" alt="" /></a>							
+						</div>
+						<div class="nav-list">
+							<ul>
+								<li><a href="">上海</a></li>
+								<li><a href="">立刻找房</a></li>
+								<li><a href="">立刻找房</a></li>
+								<li><a href="">立刻找房</a></li>
+							</ul>
+						</div>
+						<div class="nav-control">
+							<ul>
+								<li><a href="" class="nav-btn-l">伙伴登录</a></li>
+								<li><a href="" class="nav-btn-r">用户登录</a></li>
+							</ul>
+						</div>
+					</div>
+				</header>
+				<!--头部结束-->
+				
+				<!--轮播-->
+				<div class="pc-banner">
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					      <div class="swiper-slide">
+					      	<a href=""><img src="img/104032_1487908020980.jpg"/></a>
+					      </div>
+						 <div class="swiper-slide">
+					      	<a href=""><img src="img/108987_1488857367850.jpg"/></a>
+					      </div>
+					    </div>
+					    <!-- Add Arrows -->
+					    <div class="swiper-button-next"></div>
+					    <div class="swiper-button-prev"></div>
+					</div>
+					<div class="pc-search-bg">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-2 col-md-2"></div>
+								<div class="col-lg-8 col-md-8">
+									<div class="pc-search">
+										<button @click="is_show=!is_show" class="search-x">
+											{{search_txt}} ▼
+										</button>
+										<ul class="search-list" v-if="is_show">
+											<li @click="sl_select(index)" v-for="(n,index) in search_list"><a href="javascript:void(0)">{{n}}</a></li>
+										</ul>
+										<input class="search-k" type="text" placeholder="地区、小区、公交"/>
+										<input class="search-btn" type="button" name="" id="" value="搜索" />
+									</div>
+								</div>
+								<div class="col-lg-2 col-md-2" ></div>		
+							</div>
+							
+						</div>
+						
+						
+					</div>
+				</div>
+				<!--轮播结束-->
+				
+				<!--服务-->
+				<div class="pc-service container">
+				
+						<div class="pc-service-list" v-for="n in psl_list">
+							<i class="service-house"></i>
+							<div class="service-tit">真实房源</div>
+							<div class="f12">人工在线审核房源，严审房源信息</div>
+						</div>
+					
+				</div>
+			
+				<!--主题-->
+				<div class="pc-theme">
+					<div class="theme-hot container">
+						<h3>热门房源</h3>
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-6 them-hot-list" v-for="n in th_list">
+								<a href="" class="introduce-list">
+									<div class="introduce-pic">
+										<img src="img/3100698_1505881633657.jpg"/>
+									</div>
+									<div class="introduce-content">
+										<div class="ic-price">
+											1500<span>元/月</span>
+										</div>
+										<div class="ic-txt">闵行区-秀上精品公寓一楼-1室1厅1卫-18.0㎡</div>
+										<p>三个月起租，每月租金立减400</p>
+									</div>
+								</a>
+							</div>
+							
+							
+						</div>
+						
+						
+					</div>
+				</div>	
+				
+				<footer class="pc-footer">
+					<p>Copyright © 2018上海朔羡网络科技有限公司版权所有 沪ICP备16035093号</p>
+				</footer>
+				
+				
+				
+				
+				
+				
+				
+				
+			</div>
+			
+			<div class="hy-mobile hidden-sm hidden-md hidden-lg">
+				<!--手机头部-->
+				<header class="m-header">
+					<a href="" class="mh-l">
+						<img src="img/home.png"/>
+					</a>
+					<a href="" class="mh-r">
+						<img src="img/con1.jpg" alt="" />
+					</a>
+				</header>
+				<!--手机头部结束-->
+				
+				<!--手机轮播-->
+				<!--轮播-->
+				<div class="m-banner">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<div class="swiper-container2">
+							    <div class="swiper-wrapper">
+							      <div class="swiper-slide">
+							      	<a href=""><img src="img/104032_1487908020980.jpg"/></a>
+							      </div>
+								 <div class="swiper-slide">
+							      	<a href=""><img src="img/108987_1488857367850.jpg"/></a>
+							      </div>
+							    </div>
+		
+							</div>
+						</div>
+					</div>
+				</div>
+							<!--手机轮播结束-->
+			
+			<!--服务-->
+				<div class="m-service container">
+				
+					<div class="row">
+						<div v-for="n in psl_list" class="col-xs-3 col-sm-3">
+							<div class="">
+								<img src="img/rent-fs3.png"/><br />
+								合租
+							</div>
+						</div>
+					</div>
+					
+				</div>			
+			<!--服务结束-->
+			
+			<!--热门房源-->
+			<div class="m-theme">
+				<h2>热门房源<span>更多</span></h2>
+				<ul>
+					<li v-for="n in psl_list">
+						<div class="m-list-box">
+							<a href="" class="ml-pic"><img src="img/0_1494492437091.jpg" alt="" /></a>
+							<a class="ml-tit">浦东新区-YOUNG青年社区</a>
+							<h6>1室0厅1卫-20.0㎡</h6>
+							<p>距6号线东明路919米，步行约10分钟</p>
+							<span class="mt-price">2800元/月</span>
+						</div>
+						<p class="mt-time">1天前发布</p>				
+					</li>
+				</ul>
+			</div>
+			
+			
+			<!--热门房源结束-->
+			
+			<footer class="m-footer">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+					<p>Copyright © 2018上海朔羡网络科技有限公司版权所有</p>
+						
+					</div>
+				</div>
+			</footer>
+			
+			
+			
+			
+			
+			
+			</div>
+
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://cdn.bootcss.com/Swiper/4.1.0/js/swiper.min.js"></script>
+		
+		<script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
+		
+		<script type="text/javascript">
+			new Vue({
+				el: '#hy-body',
+				data: {
+					psl_list:[1,1,1,1],
+					th_list:[1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,],
+					is_show:false,
+					search_txt:"全部",
+					search_list:["全部","整租","合租","单身公寓",]
+				},
+				methods:{
+					sl_select:function(index){
+						this.search_txt=this.search_list[index];
+						this.is_show=false;
+						
+					}
+				}
+			})
+		</script>
+		
+		
+		  <script>
+		    var swiper = new Swiper('.swiper-container', {
+		    	loop:true,
+		    	autoplay:true,
+		      navigation: {
+		        nextEl: '.swiper-button-next',
+		        prevEl: '.swiper-button-prev',
+		      },
+		    });
+		    var swiper = new Swiper('.swiper-container2', {
+		    	loop:true,
+		    	autoplay:true,
+		      navigation: {
+		        nextEl: '.swiper-button-next',
+		        prevEl: '.swiper-button-prev',
+		      },
+		    });
+		  </script>		
+	</body>
+</html>
