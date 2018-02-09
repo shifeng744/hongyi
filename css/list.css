@@ -1,0 +1,261 @@
+.ls-num {
+  color: #ff5600;
+  font-weight: bold;
+}
+.bor-sty {
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  padding: 5px 5px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.c-b-g {
+  color: #fff !important;
+  background: #ff5600;
+  border-radius: 20px;
+}
+.lr-b {
+  color: deepskyblue;
+  border-radius: 20px;
+  border: 1px solid deepskyblue;
+  padding: 3px 6px;
+}
+.dis_n {
+  display: none;
+}
+.dis_b {
+  display: block;
+}
+.cur {
+  color: #ff5600 !important;
+}
+.pos_f {
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0px;
+}
+.line {
+  margin: 12px;
+}
+.yd-txt {
+  margin-top: 70px;
+}
+.pclist-search {
+  margin-top: 20px;
+}
+.pclist-search-bg {
+  background-color: #f8f8f8;
+  padding: 10px 20px !important;
+}
+.pclist-search-bg .i-search {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 9;
+  color: #000;
+  top: 7px;
+  left: 10px;
+}
+.pclist-search-bg .input-group {
+  position: relative;
+}
+.pclist-search-bg .input-group .search-btn {
+  padding-left: 25px;
+  padding-right: 25px;
+  background: #ff5600;
+  border-color: #ff5600;
+  color: #fff;
+}
+.pclist-search-bg .search-txt {
+  padding: 0 0 0 40px;
+}
+.list-panel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  color: #6e717b;
+  position: relative;
+  padding: 5px 5px 5px 10px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.list-panel .list-row {
+  padding: 0 5px 0 5px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.list-panel .list-row strong {
+  color: #999;
+}
+.list-panel .list-row a {
+  color: #000;
+  padding: 0 5px 0 5px;
+}
+.list-panel .list-row a:hover {
+  color: red;
+}
+.list-panel .last {
+  border-bottom: 0;
+}
+.list-content {
+  font-size: 16px;
+  color: #333;
+  overflow: hidden;
+}
+.list-content .list-left {
+  width: 97%;
+  overflow: hidden;
+  float: left;
+}
+.list-content .list-left .list-sorting {
+  font-size: 14px;
+  color: #333;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0px auto 20px auto;
+  padding-left: 13px;
+}
+.list-content .list-left .list-sorting span a {
+  padding: 8px 10px;
+  color: #000;
+}
+.list-content .list-left .row {
+  border-bottom: 1px dashed #f2f2f2;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.list-content .list-left .list-room {
+  padding: 0 10px 10px 10px;
+}
+.list-content .list-left .list-room .lr-right {
+  text-align: end;
+}
+.list-content .list-left .list-room .lr-right p {
+  color: deepskyblue;
+}
+.list-content .list-left .list-room .lr-right span {
+  color: #ff5600;
+  font-size: 20px;
+  font-weight: bold;
+}
+.list-content .list-left .list-room .lr-content {
+  padding-left: 10px;
+}
+.list-content .list-left .list-room .lr-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-content .list-left .list-room .lr-content .distance {
+  font-size: 12px;
+  margin-left: -5px;
+}
+.list-content .list-left .list-room .lr-content h4 a {
+  color: #000;
+}
+.list-content .list-left .list-room .lr-content h4 a:hover {
+  color: #ff5600;
+}
+.list-content .list-left .list-room .lr-list .lr-pic {
+  width: 220px;
+  height: 135px;
+}
+.list-content .list-left .list-room .lr-list .lr-pic img {
+  width: 100%;
+  height: 100%;
+}
+.list-content .list-right-banner {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+.list-content .list-right-banner .banner-list {
+  width: 100%;
+}
+.list-content .list-right-banner .banner-list a {
+  color: #000;
+}
+.list-content .list-right-banner .banner-list a:hover {
+  color: red;
+}
+.list-content .list-right-banner .banner-list .house-n {
+  color: deepskyblue;
+}
+.list-content .list-right-banner .banner-list .banner-list-price {
+  font-size: 16px;
+  color: #ff5600;
+}
+.list-content .list-right-banner .banner-list .f-right {
+  float: right;
+  border-radius: 20px;
+  line-height: 14.5px;
+  margin-top: 4px;
+}
+.list-content .list-right-banner .banner-list .bl-pic {
+  width: 100%;
+}
+.list-content .list-right-banner .banner-list .bl-pic img {
+  width: 100%;
+  height: 100%;
+}
+.paging {
+  text-align: center;
+}
+.hy-mobile {
+  background: #efeff4;
+}
+.m-list-nav {
+  margin-top: 50px;
+  background: #fff;
+  position: relative;
+}
+.m-list-nav #nav-li {
+  z-index: 999;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 42px;
+  text-align: center;
+}
+.m-list-nav #nav-li .nav1 {
+  width: 100%;
+}
+.m-list-nav #nav-li .nav1 div {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.m-list-nav #nav-li .nav1 div a {
+  color: #000;
+}
+.m-list-nav #nav-li .nav1 div a:hover {
+  color: #ff5600;
+}
+.m-list-nav ul {
+  text-align: center;
+  width: 100%;
+}
+.m-list-nav ul .li-last {
+  border-right: 0;
+}
+.m-list-nav ul li {
+  cursor: pointer;
+  width: 25%;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.m-list-nav ul li a {
+  color: #000 !important;
+  padding: 10px 8px !important;
+}
+.m-theme {
+  background: #fff;
+  margin-top: 90px;
+}
+.m-theme ul li div {
+  padding-bottom: 10px;
+}
+.m-theme ul li div .mt-price {
+  margin-bottom: 10px;
+}

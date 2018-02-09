@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<title></title>
+		
+	</head>
+	<body>
+		<div id="hy-list-body">
+			<div class="hy-list-pc hidden-xs">
+				<!--头部-->
+				<div class="public-header">
+					<public-header></public-header>
+				</div>
+				<!--头部结束-->
+				
+				<!--引导文字-->
+				<div class="yd-txt container">
+					<span class="yd-old">首页&nbsp;&nbsp;→ </span><span class="yd-now">立刻找房</span>
+				</div>
+				<!--引导文字结束-->
+				
+				<!--搜索-->
+				<div class="pclist-search container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 pclist-search-bg">
+							<div class="input-group">
+							  <i class="iconfont icon-search i-search"></i>
+						      <input type="text" class="form-control search-txt" placeholder="地区、小区、公交">
+						      <span class="input-group-btn">
+						        <button class="btn btn-default search-btn" type="button">搜索</button>
+						      </span>
+						    </div><!-- /input-group -->						
+						</div>
+					</div>
+				</div>
+				<!--搜索结束-->
+				
+				<!--面板-->
+				<div class="container">
+					<div class="list-panel">
+						<div class="row">
+							<div class="list-row col-lg-12 col-md-12">
+								<strong class="list-row-head">区域：</strong>
+								<span><a href="">不限</a></span>
+								<span><a href="">梅县区</a></span>
+								<span><a href="">兴宁</a></span>
+								<span><a href="">大浦</a></span>
+								<span><a href="">五华</a></span>
+								<span><a href="">平远</a></span>
+								<span><a href="">蕉岭</a></span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="list-row col-lg-12 col-md-12">
+								<strong class="list-row-head">租金：</strong>
+								<span><a href="">不限</a></span>
+								<span><a href="">500元以下</a></span>
+								<span><a href="">500-1000元</a></span>
+								<span><a href="">1000-2000元</a></span>
+								<span><a href="">2000-3000元</a></span>
+								<span><a href="">3000-6000</a></span>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="list-row col-lg-12 col-md-12">
+								<strong class="list-row-head">租金：</strong>
+								<span><a href="">不限</a></span>
+								<span><a href="">一室</a></span>
+								<span><a href="">二室</a></span>
+								<span><a href="">三室</a></span>
+								<span><a href="">四室</a></span>
+
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="list-row last col-lg-12 col-md-12">
+								<strong class="list-row-head">租金：</strong>
+								<span><a href="">不限</a></span>
+								<span><a href="">整租</a></span>
+								<span><a href="">合租</a></span>
+
+
+
+							</div>
+						</div>	
+					</div>
+				</div>
+				
+				
+				<!--列表&广告-->
+				<div class="list-content container">
+					<div class="row">
+						<div class="col-lg-8 col-md-8 col-sm-8">
+							<div class="row">
+								
+							
+								<div class="list-left col-lg-12 col-md-12">
+									<div class="list-sorting bor-sty">
+										<span>共<span class="ls-num"> 999+ </span>套房源：</span>
+										<span><a href="" class="c-b-g">推荐排序</a></span>
+										<span><a href="">最新发布</a></span>
+										<span><a href="">价格 ↕</a></span>
+										<span><a href="">面积 ↕</a></span>
+									</div>
+									<div class="list-room bor-sty">
+										<div class="row" v-for="n in test_list">
+											<div class="col-lg-4 col-md-4 col-sm-4">
+												<div class="lr-list">
+													<div class="lr-pic">
+														<a href=""><img src="img/0_1494492437091.jpg" alt="" /></a>
+													</div>
+													
+												</div>		
+											</div>
+											<div class="col-lg-5 col-md-5 col-sm-5">
+													<div class="lr-content">
+														<h4><a href="">黄浦区-复兴珑御</a></h4>
+														<p>2室2厅2卫-140.0㎡</p>
+														<p class="distance"><i class="iconfont icon-ditu"></i>距8号线老西门225米，步行约3分钟</p>
+														<span class="lr-b">整租</span>
+													</div>		
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3 lr-right">
+												<p><span>3500元/月</span></p>
+												<p class="house-n">豪峰房屋</p>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="list-right-banner bor-sty">
+								<h4>推荐品牌房源</h4>
+								
+								<div class="banner-list" v-for="n in test_list2">
+									<div class="bl-pic">
+										<a href=""><img src="img/3100698_1505881633657.jpg" alt="" /></a>
+									</div>
+								
+									<div>
+										<span class="banner-list-price">8000元/月</span>
+										<span class="lr-b f-right">整租</span>
+										<p><a href="">浦东新区-惠扬大厦-1室0厅1卫-38.0㎡</a></p>
+										<p class="house-n">心地公寓</p>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!--列表&广告结束-->
+				
+				<!--分页-->
+				<div class="container">
+					<nav aria-label="Page navigation" class="paging">
+					  <ul class="pagination">
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>	
+				</div>
+				<!--分页结束-->
+				<footer class="pc-footer">
+					<p>Copyright © 2018广东鸿一地产有限公司版权所有 沪ICP备16035093号</p>
+				</footer>
+								
+				
+			</div><!--pc结束-->		
+			
+			
+			<!--mobile-->
+			<div class="hy-mobile hidden-sm hidden-md hidden-lg">
+				<!--手机头部-->
+				<public-m-header></public-m-header>
+				<!--手机头部结束-->
+				
+				<!--筛选-->
+				<div class="pos_f">
+					
+				
+				<div class="m-list-nav">
+	
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-tabs" id="nav-tabs">
+				    <li><a >区域 ↕</a></li>
+				    <li><a >价格 ↕</a></li>
+				    <li><a >排序 ↕</a></li>
+				    <li class="li-last"><a >高级筛选 ↕</a></li>
+				  </ul>
+				
+				  <!-- Tab panes -->
+				  <div id="nav-li">
+				    <div class="dis_n">
+				    	<div class="nav1">
+					    	<div><a href="" class="cur">梅县区</a></div>
+					    	<div><a href="">大浦</a></div>
+					    	<div><a href="">五华</a></div>
+					    	<div><a href="">平远</a></div>
+					    	<div><a href="">蕉岭</a></div>
+
+				    	</div>
+				    </div>
+				    
+				    <div class="dis_n">
+				    	<div class="nav1">
+					    	<div><a href="" class="cur">100</a></div>
+					    	<div><a href="">200</a></div>
+					    	<div><a href="">300</a></div>
+					    	<div><a href="">400</a></div>
+					    	<div><a href="">500</a></div>
+
+				    	</div>
+				    </div>
+				    
+				    <div class="dis_n">
+				    	<div class="nav1">
+					    	<div><a href="" class="cur">1</a></div>
+					    	<div><a href="">2</a></div>
+					    	<div><a href="">3</a></div>
+					    	<div><a href="">4</a></div>
+					    	<div><a href="">5</a></div>
+
+				    	</div>
+				    </div>
+				    
+				    <div class="dis_n">
+				    	<div class="nav1">
+					    	<div><a href="" class="cur">123</a></div>
+					    	<div><a href="">223</a></div>
+					    	<div><a href="">323</a></div>
+					    	<div><a href="">423</a></div>
+					    	<div><a href="">523</a></div>
+
+				    	</div>
+				    </div>
+
+				  </div>
+				
+				</div>
+				</div>
+				<!--筛选结束-->
+				<hr class="line"/>
+				<!--房源-->
+				<div class="m-theme">
+
+					<ul>
+						<li v-for="n in psl_list">
+							<div class="m-list-box">
+								<a href="" class="ml-pic"><img src="img/0_1494492437091.jpg" alt="" /></a>
+								<a class="ml-tit">浦东新区-YOUNG青年社区</a>
+								<h6>1室0厅1卫-20.0㎡</h6>
+								<p><i class="iconfont icon-ditu"></i>距6号线东明路919米，步行约10分钟</p>
+								<span class="mt-price">2800元/月</span>
+							</div>
+
+						</li>
+					</ul>
+				</div>
+				
+				
+				<!--房源结束-->
+				
+				
+				
+				<footer class="m-footer">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+						<p>Copyright © 2018广东鸿一地产有限公司版权所有</p>
+							
+						</div>
+					</div>
+				</footer>				
+				
+			</div>
+			<!--mobile结束-->
+		</div>
+		<!--end-->
+				
+		
+		
+		
+		<script src="js/jquery.min.js"></script>
+		
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script src="js/vue.min.js"></script>
+		<script src="js/myvue.js"></script>
+		
+		<script type="text/javascript">
+			new Vue({
+				el: '#hy-list-body',
+				data: {
+					test_list:[1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,],
+					test_list2:[1,1,,1,1,1,1,1],
+					nav_show:false,
+					psl_list:[1,1,1,1,1,1,1,1,1],
+					
+				},
+			})
+		</script>
+		
+		
+		
+		<script type="text/javascript">
+			var nav_tabs=document.getElementById("nav-tabs");
+			var nav_li=document.getElementById("nav-li");
+			nav_tabs_c=nav_tabs.children;
+			nav_li_c=nav_li.children;
+			for(var i=0;i<nav_li_c.length;i++){
+				nav_tabs_c[i].index=i;
+				nav_tabs_c[i].onclick=function(){
+					num=this.index;
+					if(nav_li_c[num].className=="dis_b"){
+						nav_li_c[num].className="dis_n";
+					}
+					else{
+						
+						for(var i=0;i<nav_li_c.length;i++){
+							nav_li_c[i].className="dis_n";
+						}
+						nav_li_c[this.index].className="dis_b";
+					}
+					
+						
+					
+				}
+			}
+		</script>
+	</body>
+</html>

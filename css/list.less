@@ -1,0 +1,298 @@
+//公共
+.ls-num{
+    color: #ff5600;
+    font-weight: bold;
+}
+.bor-sty{
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    padding: 5px 5px;    
+    line-height: 30px;
+    font-size: 12px;
+}
+.c-b-g{
+    color: #fff !important;
+    
+    background: #ff5600;
+    border-radius: 20px;
+}
+                .lr-b{
+                    color: deepskyblue;
+                    border-radius: 20px;
+                    border: 1px solid deepskyblue;
+                    padding: 3px 6px;
+                }
+.dis_n{
+    display: none;
+}
+.dis_b{
+    display: block;
+}
+.cur{
+    color: #ff5600 !important;
+}
+.pos_f{
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+}
+.line{
+    margin: 12px;
+}
+             
+//list-style
+
+.yd-txt{
+    margin-top: 70px;
+}
+.pclist-search{
+    margin-top: 20px;
+}
+.pclist-search-bg{
+    background-color: #f8f8f8;
+    padding: 10px 20px !important;
+    .i-search{
+
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        z-index: 9;
+        color: #000;
+        top: 7px;
+        left: 10px;
+    }
+    .input-group{
+        position: relative;
+        
+        .search-btn{
+            padding-left: 25px;
+            padding-right: 25px;
+            background: #ff5600;
+            border-color: #ff5600;
+            color: #fff;
+        }
+    }
+    .search-txt{
+        padding: 0 0 0 40px;
+    }
+
+}
+//面板
+.list-panel{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    color: #6e717b;
+    position: relative;
+    padding: 5px 5px 5px 10px;
+    line-height: 30px;
+    font-size: 12px;
+    .list-row{
+        padding: 0 5px 0 5px;
+        border-bottom: 1px solid #f2f2f2;
+        strong{
+            color: #999;
+        }
+        a{
+            color: #000;
+        padding: 0 5px 0 5px;
+        &:hover{
+            color: red;
+        }
+     }
+    
+    }
+    .last{
+        border-bottom: 0;
+    }
+}
+
+.list-content{
+    font-size: 16px;
+    color: #333;
+    overflow: hidden;
+
+    .list-left{
+    width: 97%;
+    overflow: hidden;
+    float: left;
+    .list-sorting{
+        font-size: 14px;
+        color: #333;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin: 0px auto 20px auto;
+        padding-left: 13px;
+        span{
+            a{
+                
+                padding:8px 10px;
+                color: #000;
+            }
+        }
+        }
+        .row{
+                border-bottom: 1px dashed #f2f2f2;
+          padding-bottom: 10px;
+          padding-top: 10px;
+        }
+        .list-room{
+                 padding: 0 10px 10px 10px;
+                 .lr-right{
+                     
+                     text-align: end;
+                     p{
+                         color: deepskyblue;
+                     }
+                     span{
+                         color: #ff5600;
+                         font-size: 20px;
+                         font-weight: bold;
+                     }
+                 }
+            .lr-content{
+                padding-left: 10px;
+                p{
+                      overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+                }
+                .distance{
+                    font-size: 12px;
+                    margin-left: -5px;
+                }
+
+                    h4{
+                        a{
+                            color: #000;
+                                &:hover{
+                                    color: #ff5600;
+                                }
+                        }
+                        
+                    }
+            }
+            .lr-list{
+
+                .lr-pic{
+                    width: 220px;
+                    height: 135px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .list-right-banner{
+        width: 100%;
+        float: left;
+        padding: 15px;
+        .banner-list{
+            width: 100%;
+            a{
+                 color: #000;
+       
+        &:hover{
+            color: red;
+        }
+            }
+            .house-n{
+                color: deepskyblue;
+            }
+            .banner-list-price{
+                font-size: 16px;
+                color: #ff5600;
+            }
+            .f-right{
+                float: right;
+                border-radius: 20px;
+                line-height: 14.5px;
+                margin-top: 4px;
+            }
+            .bl-pic{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        }
+        
+    }
+}
+.paging{
+ text-align: center;
+
+}
+//手机端
+.hy-mobile{
+    background: #efeff4;
+}
+.m-list-nav{
+    margin-top: 50px;
+    background: #fff;
+    position: relative;
+    #nav-li{
+        z-index: 999;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 42px;
+        text-align: center;
+        .nav1{
+            width: 100%;
+            div{
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+                a{
+
+                    color: #000;
+                    &:hover{
+                        color: #ff5600;
+                    }
+                }
+            }
+        }
+    }
+    ul{
+        
+        text-align: center;
+        width: 100%;
+        .li-last{
+            border-right: 0;
+            
+        }
+        li{
+            cursor: pointer;
+            width: 25%;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            a{
+                color: #000 !important;
+                padding: 10px 8px !important;
+            }
+        }
+    }
+}
+
+.m-theme{
+    background: #fff;
+    margin-top: 90px;
+    ul{
+        li{
+
+            div{
+                padding-bottom: 10px;
+                .mt-price{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
