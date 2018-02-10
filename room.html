@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link href="css/swiper.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/room.css"/>
+		<title>鸿一地产-房源</title>
+	</head>
+	<body>
+		<div id="hy-room-body">
+			<!--pc-->
+			
+			<div class="hy-list-pc hidden-xs">
+				
+				<!--pc-头部-->
+				<public-header></public-header>
+				<!--pc-头部结束-->
+				
+				<!--引导文字-->
+				<div class="yd-txt container">
+					<span class="yd-old">首页&nbsp;&nbsp;→ 黄埔区&nbsp;&nbsp;→ 复兴珑御&nbsp;&nbsp;→ </span><span class="yd-now">立刻找房</span>
+				</div>
+				<!--引导文字结束-->
+				
+				<!--内容页-->
+				<div class="container">
+					<div class="row ">
+						
+						<!--内容页左-->
+						
+							
+
+						<div class="col-lg-8 col-md-8 col-sm-8">
+							<div class="room-slider">
+							   <div class="swiper-container gallery-top">
+							    <div class="swiper-wrapper">
+							            <div class="swiper-slide" style="background-image:url(img/3108772_1515122459128.jpg)"></div>
+							            <div class="swiper-slide" style="background-image:url(img/3108772_1515122462794.jpg)"></div>
+							            <div class="swiper-slide" style="background-image:url(img/3108772_1515122463959.jpg)"></div>
+							    </div>
+							    <!-- Add Arrows -->
+							    <div class="swiper-button-next swiper-button-white"></div>
+							    <div class="swiper-button-prev swiper-button-white"></div>
+							  </div>
+							  <div class="swiper-container gallery-thumbs">
+							    <div class="swiper-wrapper">
+							            <div class="swiper-slide" style="background-image:url(img/3108772_1515122459128.jpg)"></div>
+							            <div class="swiper-slide" style="background-image:url(img/3108772_1515122462794.jpg)"></div>
+							            <div class="swiper-slide" style="background-image:url(img/3108772_1515122463959.jpg)"></div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+						
+						<!--内容页左结束-->
+						<!--内容页右-->
+						<div class="col-lg-4 col-md-4 col-sm-4">
+								2	
+						</div>
+						<!--内容页右结束-->
+					</div>
+				</div>
+				<!--内容页结束-->
+				
+			</div>
+			<!--pc结束-->
+			
+			<!--mobile-->
+			<div class="hy-mobile hidden-sm hidden-md hidden-lg">
+				<!--手机头部-->
+				<public-m-header></public-m-header>
+				<!--手机头部结束-->
+				
+			</div>
+			<!--mobile结束-->
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/swiper.min.js"></script>		
+		<script src="js/vue.min.js"></script>
+		<script src="js/myvue.js"></script>
+		<script type="text/javascript">
+			new Vue({
+				el:'#hy-room-body',
+				data:{
+					
+				}
+			})
+		</script>
+	   <script>
+var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      loop:true,
+      loopedSlides: 5, //looped slides should be the same
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      touchRatio: 0.2,
+      loop: true,
+      loopedSlides: 5, //looped slides should be the same
+      slideToClickedSlide: true,
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+	
+	  </script>
+	</body>
+</html>

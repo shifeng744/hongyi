@@ -382,6 +382,9 @@ ul li {
   background: #2e3543;
 }
 /*引导文字*/
+.yd-txt {
+  margin-top: 70px;
+}
 .yd-old{
 	color: #999;
 }
