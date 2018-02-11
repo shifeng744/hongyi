@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 		<link href="css/swiper.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/room.css"/>
 		<title>鸿一地产-房源</title>
@@ -31,9 +32,6 @@
 					<div class="row ">
 						
 						<!--内容页左-->
-						
-							
-
 						<div class="col-lg-8 col-md-8 col-sm-8">
 							<div class="room-slider">
 							   <div class="swiper-container gallery-top">
@@ -42,6 +40,8 @@
 							            <div class="swiper-slide" style="background-image:url(img/3108772_1515122462794.jpg)"></div>
 							            <div class="swiper-slide" style="background-image:url(img/3108772_1515122463959.jpg)"></div>
 							    </div>
+							  
+							    
 							    <!-- Add Arrows -->
 							    <div class="swiper-button-next swiper-button-white"></div>
 							    <div class="swiper-button-prev swiper-button-white"></div>
@@ -53,18 +53,173 @@
 							            <div class="swiper-slide" style="background-image:url(img/3108772_1515122463959.jpg)"></div>
 							    </div>
 							  </div>
+
 							</div>
+							<div class="room-guarantee">
+								<h3 class="pub-tit">平台保障</h3>
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-sm-12">
+										<div class="room-li">
+											<div class="row">
+												<div class="col-lg-3 col-md-3 col-sm-6">
+													<i class="service-house"></i>
+													<div class="service-tit">真实房源</div>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-6">
+													<i class="service-house"></i>
+													<div class="service-tit">真实房源</div>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-6">
+													<i class="service-house"></i>
+													<div class="service-tit">真实房源</div>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-6">
+													<i class="service-house"></i>
+													<div class="service-tit">真实房源</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="room-info">
+								<h3 class="pub-tit">房源信息</h3>
+								<div class="room-info-txt">
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-6">
+											<p><i class="rit-pic"></i>编号：0102013564A</p>
+											<p>户型： 2室2厅2卫</p>
+											<p>类型： 小区公寓 </p>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6">
+											<p>&nbsp;</p>
+											<p>面积： 140.0㎡</p>
+											<p>楼层：17/30层</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="room-configure">
+								<h3 class="pub-tit">房源配置</h3>
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-xs-12">
+										<ul>
+											<li v-for="n in list_test">
+												<img src="img/aircondNum.png"/><br />
+											空调
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
 						</div>
-						
 						<!--内容页左结束-->
 						<!--内容页右-->
-						<div class="col-lg-4 col-md-4 col-sm-4">
-								2	
+						<div class="col-lg-4 col-md-4 col-sm-4 ">
+							<div class="content-right">
+								<h5 class="pub-tit">黄浦区-复兴珑御-2室2厅2卫-140.0㎡</h5>
+								<p><a href="" class="icons-addr"></a>距8号线老西门225米，步行约3分钟 </p>
+								<p><a href="" class="zz"></a>整租</p>
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-sm-12">
+										<div class="room-price">
+											<div class="rp-top row">
+												<div class="col-lg-3 col-md-3 col-sm-3">
+													<div class="rp-l">
+													付三
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-6">
+													<div class="rp-m">
+														35000元/月
+													</div>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-3">
+													<div class="rp-r">
+													<a href="javascript:void(0)" @click="r_price=!r_price">明细 ↕</a>
+													</div>
+												</div>
+												
+											</div>
+											
+											<div class="rp-bottom" v-if="r_price">
+												押金70000元
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="give">
+								<span>免费赠险</span>
+								
+								<a href="">在线签约并支付租金即可免费领取40万保额保险</a>
+							</div>
+							
+							<!--管家信息-->
+							<div class="room-master">
+								<div class="rm-top">
+									<span><img src="img/defaultimg-male.png"/></span>
+									管家 / 吴晓宏
+								</div>
+								<div class="rm-b">
+									<div class="cmb-l">
+										<img src="img/phone.png" alt="" />	17091269845 <br />
+										蘑菇租房为您提供隐私保护
+									</div>
+									<div class="look-r-btn">
+										<a href="">预约看房</a>
+									</div>
+								</div>
+							</div>
+							<!--管家信息结束-->
+							<div class="room-supplier">
+								<div class="rs-l">
+									蘑菇租房平台房源由第三方房东提供
+								</div>
+								<div class="rs-r">
+									了解租房秘籍 >
+								</div>
+							</div>
+							
 						</div>
 						<!--内容页右结束-->
 					</div>
+					
+					<!--更多房源-->
+					<div class="more-brand">
+							<div class="m-top">
+								<h3 class="pub-tit">同品牌房源</h3>
+								<span class="more-r"><a href="">查看更多房源</a></span>
+							</div>
+							<div class="row">
+								<div class="col-lg-3 col-md-4 col-sm-6 them-hot-list" v-for="n in th_list">
+								<a href="" class="introduce-list">
+									<div class="introduce-pic">
+										<img src="img/3100698_1505881633657.jpg"/>
+									</div>
+									<div class="introduce-content">
+										<div class="ic-price">
+											1500<span>元/月</span>
+										</div>
+										<div class="ic-txt">闵行区-秀上精品公寓一楼-1室1厅1卫-18.0㎡</div>
+										<p>三个月起租，每月租金立减400</p>
+									</div>
+								</a>
+							</div>
+	
+										
+							</div>
+					</div>
 				</div>
 				<!--内容页结束-->
+				
+				<!--footer-->
+				<footer class="pc-footer">
+					<p>Copyright © 2018广东鸿一地产有限公司版权所有 沪ICP备16035093号</p>
+				</footer>
+				<!--footer结束-->
 				
 			</div>
 			<!--pc结束-->
@@ -75,6 +230,187 @@
 				<public-m-header></public-m-header>
 				<!--手机头部结束-->
 				
+				<!--手机轮播-->
+				  <div class="m-autoplay">
+				  	<div class="swiper-container3 ma-box">
+					    <div class="swiper-wrapper">
+					      <div class="swiper-slide"><img src="img/3108772_1515122459128.jpg"/></div>
+					      <div class="swiper-slide"><img src="img/3108772_1515122462794.jpg" alt="" /></div>
+					      <div class="swiper-slide"><img src="img/3108772_1515122463959.jpg" alt="" /></div>
+	
+					    </div>
+				    </div>
+				  </div>
+				<!--手机轮播结束-->
+
+					
+				
+					<div class="m-room-content">
+						<div class="mrc-top">
+							<div class="mrc-name">
+								<div class="ic-l">
+									<i class="mrc-ic"></i>
+									<h5>黄浦区-复兴珑御</h5>
+								</div>
+								<div class="ic-r">
+									<span class="lr-b">整租</span>
+								</div>
+								
+							</div>
+						</div>
+						<div class="mrc-mid">
+							<p>2室2厅2卫-140.0㎡</p>
+							<p class="small-p"><i class="iconfont icon-ditu"></i>距8号线老西门225米</p>
+						</div>
+						<div class="mrc-bot">
+							<div class="row">
+								<div class="col-sm-5 col-xs-5">
+									<span class="cr-o">付三</span>
+								</div>
+								<div class="col-sm-5 col-xs-5">
+									<span class="cr-o">3500元/月</span>
+								</div>
+								<div class="col-sm-2 col-xs-2">
+									明细 >
+								</div>
+							</div>
+						</div>
+					</div>
+					 <div class="m-giv">
+					 	<span>免费赠险</span>
+						<a href="">在线签约并支付租金即可免费领取40万保额保险</a>
+					 </div>
+					<div class="m-guarantee">
+						<div class="mg-name">
+								<div class="ic-l">
+									<i class="mg-ic"></i>
+									<h5>平台保障</h5>
+								</div>
+								<div class="ic-r">
+									<span>></span>
+								</div>
+								
+						</div>
+						<div class="mg-ul">
+							<div class="mg-li" v-for="n in th_list">
+								<img src="img/zs.png"/>
+								真实房源
+								<span>人工在线审核房源，严审房源信息</span>
+
+							</div>
+						</div>	
+					</div>
+					<div class="m-info">
+						<div class="pub-r-name">
+								<div class="ic-p">
+									<i class="pu-ic"><img src="img/fy.png"/></i>
+									<h5>房源信息</h5>	
+								</div>
+						</div>		
+								<div class="m-info-txt">
+									<div class="row">
+										<div class="col-sm-6 col-xs-6">
+											<p><i class="rit-pic"></i>编号：0102013564A</p>
+											<p>户型： 2室2厅2卫</p>
+											<p>类型： 小区公寓 </p>
+										</div>
+										<div class="col-sm-6 col-xs-6">
+											<p>&nbsp;</p>
+											<p>面积： 140.0㎡</p>
+											<p>楼层：17/30层</p>
+										</div>
+									</div>
+								</div>
+						
+					</div>
+					<!--房源配置-->
+					<div class="m-configure">
+						<div class="pub-r-name">
+								<div class="ic-p">
+									<i class="pu-ic"><img src="img/pz.png"/></i>
+									<h5>房源配置</h5>	
+								</div>
+								
+						</div>
+						<div class="row">
+									<div class="col-lg-12 col-md-12 col-xs-12">
+										<ul>
+											<li v-for="n in list_test">
+												<img src="img/aircondNum.png"/><br />
+											空调
+											</li>
+										</ul>
+									</div>
+								</div>
+					</div>
+					
+					<!--周边-->
+					<div class="m-near">
+						<div class="pub-r-name">
+								<div class="ic-p">
+									<i class="pu-ic"><img src="img/pz.png"/></i>
+									<h5>品牌信息</h5>	
+								</div>		
+						</div>
+						<div class="m-mster">
+							<img src="img/defaultimg-male.png"/><span>豪峰房屋</span>
+							
+						</div>
+					</div>
+					
+					<!--同品牌房源-->
+					<div class="m-brand">
+						<div class="pub-r-name">
+								<div class="ic-p">
+									<i class="pu-ic"><img src="img/pz.png"/></i>
+									<h5>同品牌房源</h5>	
+								</div>		
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-6 col-xs-6 them-hot-list" v-for="n in th_list2">
+								<div class="m-pub-inc">
+									<div class="mpi-pic">
+										<img src="img/3100698_1505881633657.jpg" alt="" />
+									</div>
+									<div class="mpi-txt">
+										<span>1300元/月</span>
+										<h6>黄浦区-中福世福汇 整租-1室2厅1卫-66.44㎡</h6>
+										<p>距10号线豫园528米</p>
+									</div>
+								
+								</div>
+							</div>
+	
+										
+							</div>
+					</div>
+					<div class="m-supplier">
+						<p>蘑菇租房平台房源由第三方房东提供</p>
+					</div>
+				<footer class="m-footer">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+						<p>Copyright © 2018广东鸿一地产有限公司版权所有</p>
+							
+						</div>
+					</div>
+				</footer>
+				
+				<div class="m-contact">
+					<div class="row">
+						<div class="col-sm-6 col-xs-6">
+							<a href="" class="m-r-btnl">
+								联系房东
+							</a>
+						</div>
+						<div class="col-sm-6 col-xs-6">
+							<a href="" class="m-r-btnr">
+								预约看房
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!--mobile结束-->
 		</div>
@@ -101,31 +437,40 @@
 			new Vue({
 				el:'#hy-room-body',
 				data:{
-					
+					list_test:[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,],
+					th_list:[1,1,1,1],
+					th_list2:[1,1],
+					r_price:false
 				}
 			})
 		</script>
 	   <script>
-var galleryTop = new Swiper('.gallery-top', {
-      spaceBetween: 10,
-      loop:true,
-      loopedSlides: 5, //looped slides should be the same
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 4,
-      touchRatio: 0.2,
-      loop: true,
-      loopedSlides: 5, //looped slides should be the same
-      slideToClickedSlide: true,
-    });
-    galleryTop.controller.control = galleryThumbs;
-    galleryThumbs.controller.control = galleryTop;
+		var galleryTop = new Swiper('.gallery-top', {
+		      spaceBetween: 10,
+		      loop:true,
+		      loopedSlides: 5, //looped slides should be the same
+		      navigation: {
+		        nextEl: '.swiper-button-next',
+		        prevEl: '.swiper-button-prev',
+		      },
+		    });
+		    var galleryThumbs = new Swiper('.gallery-thumbs', {
+		      spaceBetween: 10,
+		      slidesPerView: 4,
+		      touchRatio: 0.2,
+		      loop: true,
+		      loopedSlides: 5, //looped slides should be the same
+		      slideToClickedSlide: true,
+		    });
+		    galleryTop.controller.control = galleryThumbs;
+		    galleryThumbs.controller.control = galleryTop;
 	
 	  </script>
+	  <script>
+    	var swiper = new Swiper('.swiper-container3',{
+    		loop:true,
+    		autoplay:true
+    	});
+  	  </script>  
 	</body>
 </html>
