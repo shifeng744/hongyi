@@ -82,6 +82,29 @@
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 20px;
 }
+.room-info span {
+  color: #999;
+}
+.room-info .room-info-txt .rit-price {
+  color: #f65000;
+  font-size: 18px;
+  font-weight: bold;
+}
+.room-info .room-info-txt dl {
+  margin: 5px 0;
+}
+.room-info .room-info-txt dl dt {
+  float: left;
+  width: 60px;
+  display: block;
+  color: #999;
+  font-weight: normal;
+  font-size: 12px;
+}
+.room-info .room-info-txt dl dt dd {
+  float: left;
+  font-size: 13px;
+}
 .room-info .rit-pic {
   display: block;
   width: 18px;
@@ -100,15 +123,15 @@
 }
 .room-configure li {
   display: block;
-  width: 40px;
-  height: 60px;
+  font-size: 12px;
   text-align: center;
   margin: 0 13px 13px 13px;
   float: left;
 }
 .room-configure li img {
-  padding-bottom: 5px;
-  width: 100%;
+  width: 12px;
+  margin-right: 3px;
+  margin-top: -3px;
 }
 .content-right {
   margin-top: 10px;
@@ -397,8 +420,31 @@
   padding: 10px;
   background: #fff;
 }
+.m-info span {
+  color: #999;
+}
 .m-info .m-info-txt {
+  font-size: 12px;
   margin-left: 20px;
+}
+.m-info .m-info-txt .rit-price {
+  color: #f65000;
+  font-size: 14px;
+  font-weight: bold;
+}
+.m-info .m-info-txt dl {
+  margin: 5px 0;
+}
+.m-info .m-info-txt dl dt {
+  float: left;
+  width: 60px;
+  display: block;
+  color: #999;
+  font-weight: normal;
+  font-size: 10px;
+}
+.m-info .m-info-txt dl dt dd {
+  float: left;
 }
 .m-info .m-info-txt p {
   font-size: 10px;
@@ -412,13 +458,16 @@
   margin-left: 10px;
 }
 .m-configure ul li {
+  font-size: 10px;
   display: block;
   text-align: center;
   float: left;
   padding: 5px 10px 5px 10px;
 }
 .m-configure ul li img {
-  width: 30px;
+  width: 10px;
+  margin-right: 3px;
+  margin-top: -3px;
 }
 .m-near {
   padding: 10px;
